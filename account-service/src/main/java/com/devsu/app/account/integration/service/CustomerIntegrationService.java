@@ -4,7 +4,7 @@ import com.devsu.app.account.integration.model.Customer;
 
 public interface CustomerIntegrationService {
 
-	Customer getCustomerDataByPersonalId(String personalId);
-	
-	Customer getCustomerDataByAccountNumber(String accountNumber);
+    Customer getCustomerDataByPersonalId(String personalId);
+
+    Customer getCustomerDataByAccountNumber(String accountNumber);
 }

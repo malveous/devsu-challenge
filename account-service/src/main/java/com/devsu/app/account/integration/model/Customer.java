@@ -9,15 +9,15 @@ import lombok.NoArgsConstructor;
 @Data
 public class Customer {
 
-	private int id;
-	private String name;
-	private String gender; // This can be handled with either an enum or a database table
-	private int age;
-	private String personalId;
-	private String address;
-	private String phoneNumber;
-	private String customerId;
-	private String password;
-	private boolean status;
-	
+    private int id;
+    private String name;
+    private Gender gender; // This can be handled with either an enum or a database table
+    private int age;
+    private String personalId;
+    private String address;
+    private String phoneNumber;
+    private String customerId;
+    private String password;
+    private CustomerStatus status;
+
 }

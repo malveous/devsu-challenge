@@ -2,20 +2,20 @@ package com.devsu.app.account.service;
 
 import java.util.List;
 
-import com.devsu.app.account.model.Operation;
+import com.devsu.app.account.dto.OperationDto;
 
 public interface OperationService {
 
-	List<Operation> listAllOperations();
-	
-	List<Operation> listOperationsByAccountNumber(String accountNumber);
-	
-	Operation findOperationById(int id);
-	
-	int register(Operation newOperation);
-	
-	int update(Operation existingOperation);
-	
-	void delete(int id);
-	
+    List<OperationDto> listAllOperations();
+
+    List<OperationDto> listOperationsByAccountNumber(String accountNumber);
+
+    OperationDto findOperationById(int id);
+
+    int register(OperationDto newOperation);
+
+    int update(OperationDto existingOperation);
+
+    void delete(int id);
+
 }

@@ -8,9 +8,8 @@ import lombok.experimental.UtilityClass;
 
 public class CustomerDataUtility {
 
-	public String generateCustomerId() {
-		return UUID.randomUUID().toString(); // This could vary depending on business requirements
-	}
-	
-	
+    public String generateCustomerId() {
+        return UUID.randomUUID().toString(); // This could vary depending on business requirements
+    }
+
 }

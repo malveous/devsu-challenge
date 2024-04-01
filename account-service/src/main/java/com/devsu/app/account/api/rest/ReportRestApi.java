@@ -8,20 +8,20 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.devsu.app.account.model.AccountRecordReport;
+import com.devsu.app.account.dto.AccountRecordReportDto;
 import com.devsu.app.account.service.ReportService;
 
 @RestController
 @RequestMapping("/api/report")
 public class ReportRestApi {
 
-	@Autowired
-	private ReportService reportService;
-	
-	@GetMapping
-	public List<AccountRecordReport> generateAccountRecordReport(@RequestParam String start,
-			@RequestParam String end, @RequestParam String personalId) {
-		return this.reportService.generateAccountRecordReport(start, end, personalId);
-	}
-	
+    @Autowired
+    private ReportService reportService;
+
+    @GetMapping
+    public List<AccountRecordReportDto> generateAccountRecordReport(@RequestParam String start,
+            @RequestParam String end, @RequestParam String personalId) {
+        return this.reportService.generateAccountRecordReport(start, end, personalId);
+    }
+
 }

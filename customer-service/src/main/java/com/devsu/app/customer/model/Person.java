@@ -14,14 +14,14 @@ import lombok.experimental.SuperBuilder;
 @MappedSuperclass
 public class Person {
 
-	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private int id;
-	private String name;
-	private String gender; // This can be handled with either an enum or a database table
-	private int age;
-	private String personalId;
-	private String address;
-	private String phoneNumber;
-	
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private int id;
+    private String name;
+    private String gender; // This can be handled with either an enum or a database table
+    private int age;
+    private String personalId;
+    private String address;
+    private String phoneNumber;
+
 }
